@@ -1,12 +1,20 @@
 {
   "run": [
     {
+      "method": "fs.download",
+      "params": {
+        "url": "https://github.com/KLM-corporation/gitingest-ui/releases/latest/download/GitingestUI-Windows.zip",
+        "dir": "build/Release"
+      }
+    },
+    {
       "method": "shell.run",
       "params": {
         "message": [
-          "cmake -B build",
-          "cmake --build build --config Release"
-        ]
+          "tar -xf GitingestUI-Windows.zip",
+          "del GitingestUI-Windows.zip"
+        ],
+        "path": "build/Release"
       }
     },
     {
