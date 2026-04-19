@@ -1,0 +1,19 @@
+{
+  "run": [
+    {
+      "method": "shell.run",
+      "params": {
+        "message": [
+          "cmake -B build",
+          "cmake --build build --config Release"
+        ]
+      }
+    },
+    {
+      "method": "notify",
+      "params": {
+        "html": "Installation finished. Click 'start' to run GitingestUI."
+      }
+    }
+  ]
+}
