@@ -1,0 +1,13 @@
+# Git Ingest UI - Gitignore
+.gitingest_temp
+build/
+bin/
+obj/
+*.exe
+*.log
+.gitcredtmp
+.gitingest_tok_data.tmp
+.gitingest_tok_script.py
+config.dat
+gitingest_config.ini
+imgui.ini
